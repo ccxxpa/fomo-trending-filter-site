@@ -1,0 +1,6 @@
+.git/
+.vercel/
+.DS_Store
+.gitignore
+.nojekyll
+README.md
