@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="按市值和榜位筛选 Fomo 热门币，新进优先，保留变化日志。下载 Chrome 扩展并查看安装说明。">
+  <title>Fomo 热度筛选 · 下载与使用</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#install">跳到安装步骤</a>
+  <header class="wrap topbar">
+    <a class="brand" href="./"><img src="assets/icon.svg" width="32" height="32" alt=""><span>Fomo 热度筛选</span></a>
+    <nav aria-label="页面导航"><a href="#features">功能</a><a href="#install">安装</a><a href="#faq">常见问题</a></nav>
+  </header>
+  <main>
+    <section class="wrap hero" aria-labelledby="title">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>CHROME 扩展 <span class="version">v0.10.0</span></p>
+      <h1 id="title">只看你关心的<br><span>Fomo 热门币。</span></h1>
+      <p class="intro">按市值筛币，优先看新进。<br class="mobile-break">把每次加入与移除，留在变化日志里。</p>
+      <div class="actions"><a class="button primary" href="https://github.com/ccxxpa/fomo-trending-filter/releases/download/v0.10.0/fomo-trending-filter-0.10.0.zip">下载插件 <span aria-hidden="true">↓</span></a><a class="button secondary" href="#install">查看安装步骤 <span aria-hidden="true">↗</span></a></div>
+      <p class="download-note">电脑 Chrome · ZIP 安装包 · 无需 API Key 或本地服务</p>
+      <p class="access-note">当前为私有预览，下载需登录有仓库访问权限的 GitHub 账号。</p>
+    </section>
+
+    <section class="wrap section" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><p class="eyebrow">01 / 功能</p><h2 id="features-title">从热榜到关注名单，少翻几遍。</h2></div>
+      <dl class="features">
+        <div><dt><span>筛选</span>市值与榜位，你来定</dt><dd>自定市值上下限，选择前 10、前 20 或全部热门。保留原榜位，方便对照。</dd></div>
+        <div><dt><span>发现</span>新进与重回，一眼看到</dt><dd>按进入所选范围的时间排序。悬停比较最早保留市值与当前市值，点击查看详情。</dd></div>
+        <div><dt><span>记录</span>看过的变化，有迹可循</dt><dd>底部日志记录加入、移除及原因。可查看单币历史、搜索记录和导出 CSV。</dd></div>
+      </dl>
+      <p class="small-note">拖动标题栏可移动面板，位置自动记住；双击标题恢复默认。</p>
+    </section>
+
+    <section class="wrap lens" aria-labelledby="lens-title">
+      <div><p class="eyebrow">搭配使用</p><h2 id="lens-title">筛完币，顺手看叙事。</h2><p>安装官方 Fomo Lens 并开启它的「悬停预览」，停在筛选列表的币种行，即可打开 Lens 卡片。两个插件各自独立更新。</p></div>
+      <a href="https://hogen.pro/fomo-helper/" class="text-link">查看 Fomo Lens <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="wrap section" id="install" aria-labelledby="install-title">
+      <div class="section-heading"><p class="eyebrow">02 / 安装</p><h2 id="install-title">三步开始使用。</h2><p>尚未上架 Chrome 商店，使用下载包手动安装。</p></div>
+      <ol class="steps">
+        <li><div><h3>下载、解压，放在固定位置</h3><p>点击上方「下载插件」，解压 ZIP。保留解压后的文件夹，浏览器会从这里读取扩展。</p></div></li>
+        <li><div><h3>在 Chrome 中加载扩展</h3><p>地址栏输入 <code>chrome://extensions</code>，开启「开发者模式」，点击「加载已解压的扩展程序」，选择包含 <code>manifest.json</code> 的文件夹。</p></div></li>
+        <li><div><h3>登录 Fomo，打开热门页</h3><p>前往 <a href="https://fomo.family/">fomo.family</a> 登录，进入「热门」页并刷新。设置你想看的市值和榜单范围。</p></div></li>
+      </ol>
+      <div class="update-note"><strong>已经安装？</strong><p>新版文件完整覆盖原文件夹，再在扩展管理页点重新加载、刷新 Fomo。不要先卸载，以免丢失本地日志。</p></div>
+    </section>
+
+    <section class="wrap section" id="faq" aria-labelledby="faq-title">
+      <div class="section-heading"><p class="eyebrow">03 / 常见问题</p><h2 id="faq-title">你可能想知道。</h2></div>
+      <div class="faq">
+        <details><summary>装好了，为什么没有面板？</summary><p>确认扩展已启用，且允许访问 Fomo。进入「热门」页并刷新一次。从插件点开的代币详情页不会再显示筛选面板。</p></details>
+        <details><summary>「新进」代表刚发行的币吗？</summary><p>不是。「新进」表示本机观察到它进入你选择的榜单范围，不代表发行时间或平台实际上榜时间。</p></details>
+        <details><summary>记录能保存多久？</summary><p>保留最近 5000 条或约 4 MB 日志，满后自动淘汰最旧记录。可以导出 CSV；卸载扩展会删除本地日志。</p></details>
+        <details><summary>下载时为什么出现 404？</summary><p>当前仓库为私有预览。请登录有访问权限的 GitHub 账号，再点击下载。</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><div class="footer-links"><a href="https://github.com/ccxxpa/fomo-trending-filter">GitHub</a><a href="https://github.com/ccxxpa/fomo-trending-filter/issues">问题反馈</a><a href="privacy.html">隐私说明</a></div><p>第三方只读工具，与 Fomo 无隶属关系。筛选与观察记录不构成投资建议。</p></footer>
+</body>
+</html>
