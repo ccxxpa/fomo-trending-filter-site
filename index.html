@@ -17,10 +17,10 @@
   </header>
   <main>
     <section class="wrap hero" aria-labelledby="title">
-      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>CHROME 扩展 <span class="version">v0.13.1</span></p>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>CHROME 扩展 <span class="version">v0.13.2</span></p>
       <h1 id="title">只看你关心的<br><span>Fomo 热门币。</span></h1>
       <p class="intro">按市值筛币，优先看新进。<br class="mobile-break">把每次加入与移除，留在变化日志里。</p>
-      <div class="actions"><a class="button primary" href="https://github.com/ccxxpa/fomo-trending-filter/releases/download/v0.13.1/fomo-trending-filter-0.13.1.zip">下载插件 <span aria-hidden="true">↓</span></a><a class="button secondary" href="#install">查看安装步骤 <span aria-hidden="true">↗</span></a></div>
+      <div class="actions"><a class="button primary" href="https://github.com/ccxxpa/fomo-trending-filter/releases/download/v0.13.2/fomo-trending-filter-0.13.2.zip">下载插件 <span aria-hidden="true">↓</span></a><a class="button secondary" href="#install">查看安装步骤 <span aria-hidden="true">↗</span></a></div>
       <p class="download-note">电脑 Chrome · ZIP 安装包 · 无需 API Key 或本地服务</p>
     </section>
 
@@ -29,7 +29,7 @@
       <dl class="features">
         <div><dt><span>筛选</span>市值与榜位，你来定</dt><dd>自定市值上下限，选择前 10、前 20 或全部热门。也可开启「只看后续新进」，忽略市值，排除开启时已在榜的币。</dd></div>
         <div><dt><span>发现</span>新进与重回，一眼看到</dt><dd>按进入所选范围的时间排序。后续新进模式下，离榜即移出，重回再显示；刷新和切换范围保留起点，切回也能继续看。</dd></div>
-        <div><dt><span>记录</span>看过的变化，有迹可循</dt><dd>底部日志记录加入、移除。上榜历史在面板旁独立显示，带图标回看观察过的币，用 Fomo 更新本页市值；支持筛选、CSV 与备份恢复。</dd></div>
+        <div><dt><span>记录</span>看过的变化，有迹可循</dt><dd>底部日志记录加入、移除。上榜历史在面板旁独立显示，带图标回看观察过的币，用 Fomo 更新本页市值；支持筛选、CSV、备份恢复与清空历史。</dd></div>
       </dl>
       <p class="small-note">拖动标题栏可移动面板，位置自动记住；双击标题恢复默认。点击币种行的「GMGN ↗」可到原站查看聪明钱，插件不自动请求 GMGN 数据。</p>
     </section>
@@ -55,6 +55,7 @@
         <details><summary>装好了，为什么没有面板？</summary><p>确认扩展已启用，且允许访问 Fomo。进入「热门」页并刷新一次。从插件点开的代币详情页不会再显示筛选面板。</p></details>
         <details><summary>「新进」代表刚发行的币吗？</summary><p>不是。「新进」表示本机观察到它进入你选择的榜单范围，不代表发行时间或平台实际上榜时间。</p></details>
         <details><summary>记录能保存多久？</summary><p>变化日志保留最近5000条或约4MB；上榜历史按币单独保存，不按日志上限淘汰，仍受浏览器与磁盘容量限制。卸载前请下载历史备份。</p></details>
+        <details><summary>如何清空上榜历史？</summary><p>点历史区域顶部「清空历史」，确认后删除全部历史币，包括筛选外的记录。变化日志与筛选设置保留；后续榜单数据会重新记录，当前在榜币可能再次出现。需要保留请先下载备份。</p></details>
         <details><summary>离榜后还能看市值吗？</summary><p>打开「上榜历史」时，通过当前 Fomo 登录会话查询本页币种。1分钟内复用已有数值，失败时保留上次数值并显示原因；不会持续轮询全部历史。首次市值与查询市值均按价格乘总供应量计算。</p></details>
       </div>
     </section>
