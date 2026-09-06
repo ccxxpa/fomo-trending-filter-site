@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>隐私说明 · Fomo 热度筛选</title><link rel="icon" href="assets/icon.svg"><link rel="stylesheet" href="style.css"></head><body><main class="wrap legal"><a href="./">← 返回使用说明</a><h1>隐私说明</h1><p>版本0.11.0，2026-09-06。后续新进模式的开关和观察起点保存在本机扩展设置中，用于刷新后继续观察。</p>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>隐私说明 · Fomo 热度筛选</title><link rel="icon" href="assets/icon.svg"><link rel="stylesheet" href="style.css"></head><body><main class="wrap legal"><a href="./">← 返回使用说明</a><h1>隐私说明</h1><p>版本0.12.0，2026-09-06。后续新进模式的开关和观察起点保存在本机扩展设置中，用于刷新后继续观察。</p>
 <p>Fomo 热度筛选只在 https://fomo.family/ 的顶层网页运行，处理热门榜的公开代币标识、网络、市值字段、原榜位、币名、公开图片及本机观察到的范围进入时间。原始网络消息不保存、不记录、不转发。</p>
 <p>扩展不读取、提取或保存Cookie、登录令牌、请求头、账户资料、钱包地址清单、余额、个人持仓、私钥或签名，不连接钱包或交易。</p>
 <p>筛选设置保存在Chrome扩展本地存储。当前观察标签的sessionStorage保存公开代币标识、订阅网络编号、上次榜序、本机观察到的首次出现/范围进入时间及更新时间，用于刷新恢复；不缓存市值、价格、币名、图片或原始帧。记录超过24小时未更新失效，最多10000个身份、1000个当前榜位、3MB。只访问本扩展自己的fomo-heat-filter:observations:v1和fomo-heat-filter:view-mode两个键，不枚举或读取网站其他存储。没有服务器、统计埋点或云同步。</p>
@@ -11,4 +11,4 @@
 <p>单币日志按已有记录日期分组。当次市值缺失而使用上一条已知样本时，同时展示“上次市值”与该样本时间；只改变界面选择，不改写原始记录，不新增数据保存。</p>
 <p>面板位置保存在扩展storage.local自有键mhFomoFilterPanelPosition中，仅含最终x/y两个数字。不保存鼠标轨迹、屏幕内容或网页行为；拖动结束后写入，窗口尺寸变化只调整显示。双击标题恢复默认时删除该位置键，不清空筛选设置或日志。</p>
 <p>同时启用官方 Fomo Lens 时，悬停币种行会将这只币的公开 Fomo 链接（链、合约地址及详情页标记）通过页面中的临时链接与悬停事件交给 Lens。临时链接不可见、不可聚焦，离开或关闭相关界面后清除；不写存储，不修改 Lens 代码，也不传递账户或登录信息。Lens 按自己的设置请求 DeBot 等服务，因此其服务方可能看到查询的公开合约地址和网络地址，详见 Lens 自己的隐私说明。热度筛选自身没有新增 fetch、行情订阅、跨扩展消息或权限。
-</p></main></body></html>
+</p><p>点击「GMGN」仅在新标签页打开对应链与完整合约地址的代币页面，链接不携带来源页 Referer、推荐码或追踪参数。扩展不调用 GMGN API、不预加载其页面、不配置或保存 GMGN API Key。GMGN 网站由用户主动打开后自行加载，适用其网站隐私说明。</p></main></body></html>
