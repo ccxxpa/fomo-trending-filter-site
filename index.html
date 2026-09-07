@@ -17,10 +17,10 @@
   </header>
   <main>
     <section class="wrap hero" aria-labelledby="title">
-      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>CHROME 扩展 <span class="version">v0.26.0</span></p>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>CHROME 扩展 <span class="version">v0.26.1</span></p>
       <h1 id="title">只看你关心的<br><span>Fomo 热门币。</span></h1>
       <p class="intro">按市值筛币，优先看新进。<br class="mobile-break">可开启声音提醒，同批新币一起列出。</p>
-      <div class="actions"><a class="button primary" href="https://github.com/ccxxpa/fomo-trending-filter/releases/download/v0.26.0/fomo-trending-filter-0.26.0.zip">下载插件 <span aria-hidden="true">↓</span></a><a class="button secondary" href="#install">查看安装步骤 <span aria-hidden="true">↗</span></a></div>
+      <div class="actions"><a class="button primary" href="https://github.com/ccxxpa/fomo-trending-filter/releases/download/v0.26.1/fomo-trending-filter-0.26.1.zip">下载插件 <span aria-hidden="true">↓</span></a><a class="button secondary" href="#install">查看安装步骤 <span aria-hidden="true">↗</span></a></div>
       <p class="download-note">电脑 Chrome · ZIP 安装包 · 无需 API Key 或本地服务</p>
     </section>
 
@@ -28,7 +28,7 @@
       <div class="section-heading"><p class="eyebrow">01 / 功能</p><h2 id="features-title">从热榜到历史记录，少翻几遍。</h2></div>
       <dl class="features">
         <div><dt><span>筛选</span>市值与榜位，你来定</dt><dd>自定市值上下限，选择前 10、前 20 或全部热门。勾选「只看开启后新进」可包含重回，再勾选「只看首次新进」排除本机旧币；统一的「不限市值」适用于所有筛选。</dd></div>
-        <div><dt><span>提醒</span>响一声，知道哪些币来了</dt><dd>声音设置默认折叠，展开可选择、试听四种提示音并自动记住，同批新进列出全部币名，提醒记录保留当时市值、榜位，可查日志或确认清空。本轮同币不重复，刷新和调整条件延续去重；关闭筛选后重新开启才开始新轮。</dd></div>
+        <div><dt><span>提醒</span>响一声，知道哪些币来了</dt><dd>声音设置默认折叠，展开可选择、试听四种提示音并自动记住，同批新进列出全部币名，提醒记录显示币种图标并保留当时市值、榜位，可查日志或确认清空。本轮同币不重复，刷新和调整条件延续去重；关闭筛选后重新开启才开始新轮。</dd></div>
         <div><dt><span>记录</span>看过的变化，有迹可循</dt><dd>单币日志集中看每次重回、上一段最后在榜时间、间隔和市值对比，筛选变化统一在顶部展开；也可只看当前一轮新进观察。上榜历史可按网络、近期重回筛选，按最近在榜排序；详情查看最好榜位和在榜观察最高市值，也可复制合约、开 GMGN、查单币日志。</dd></div>
       </dl>
       <p class="small-note">顶部设置与底部日志可独立折叠，默认收起并记住状态；收起后仍显示新进、市值和榜位条件，留出更多空间看榜。拖动标题栏可移动面板，位置自动记住；双击标题恢复默认。币种行右侧可一键复制完整 CA，成功后图标短暂变为绿色对勾；旁边的「GMGN ↗」可到原站查看聪明钱，插件不自动请求 GMGN 数据。</p>
@@ -61,6 +61,7 @@
         <details><summary>市值按当前值还是首次值？</summary><p>限制市值时，普通筛选和包含重回的开启后新进按当前市值判断。例如开启后进入前20时为40万美元，之后自然涨到50万美元且仍在前20，就可进入50万–200万美元的筛选结果，本轮尚未提醒过时可提醒一次；市值跨入区间不算新进或重回。只看首次新进时，使用发现时固定的市值和榜位，发现时40万美元的币之后涨到50万美元不会补报。手动改条件后出现的结果保持静默。</p></details>
         <details><summary>首次新进如何判断？</summary><p>勾选「只看首次新进」后，沿用「只看开启后新进」的观察起点，只认本机连续观察到首次进入整个热榜的币。起点时已在榜、以前见过的身份和旧币重回都不计入；第50升到第15不算首次新进。首次市值与榜位固定按发现时判断，当前列表仍显示最新市值，离开所选范围时移出。符合即提醒，不等待1分钟或3分钟。</p><p>首次指本机观察，并非代币首次发行或平台历史首次上榜。已知身份从仍保留的历史、日志和提醒初始化；此前已删除或从未记录的过程无法还原。已建立的身份记录不随刷新、重开开关或清空提醒、日志、上榜历史删除。关闭网页或数据中断期间不补造新进。</p></details>
         <details><summary>升级后原来的筛选设置会变吗？</summary><p>旧后续新进默认继续勾选「不限市值」，旧首次新进沿用原来的不限首次市值选择和起点，普通筛选保留已保存设置。新安装仍默认50万–200万美元、前20。无需清空记录，没有新增行情来源、权限、数据库迁移或旧记录回填。</p></details>
+        <details><summary>提醒记录的图标从哪里来？</summary><p>0.26.1（2026-09-08）新增提醒币种图标。新提醒保存 Fomo 榜单已有的公开图标地址；旧提醒没有有效地址时，打开提醒记录后按同一网络与完整合约地址读取本机上榜历史，仅供当前界面显示，不改写旧提醒或当时市值、时间与榜位。地址缺失、本机读取失败或图片加载失败时显示币名首字。</p><p>图片通过浏览器常规请求从已有公开图片源加载，不查询行情或 GMGN API，不新增权限或数据库版本；无需清空已有记录。</p></details>
         <details><summary>提醒记录可以清空吗？</summary><p>提醒记录可查看每币当时的发现时间、市值和榜位，并复制 CA、打开 GMGN 或查看全部日志。旧提醒缺少的字段显示未记录，不拿当前行情补填。点击「清空提醒」再确认，只删除提醒记录，保留上榜历史、变化日志和本轮已见身份；清空不会再次提醒旧币。</p></details>
         <details><summary>提醒里的“这一轮”如何开始和结束？</summary><p>由「开启筛选」总开关控制，关闭后重新开启才重置。刷新、关闭页面再打开、改市值、切换榜单范围、新进条件或不限市值、开关声音都延续同一轮。调整条件后显示出来的币只记为已见，不响。暂停列表、收起面板和查看记录仍会观察；关闭网页、断线或休眠期间的变化不会补报。</p></details>
         <details><summary>记录能保存多久？</summary><p>提醒记录保留最近100批、合计最多2000个币次，淘汰旧提醒不影响本轮去重；变化日志保留最近5000条或约4MB；上榜历史按币单独保存，不按日志上限淘汰，仍受浏览器与磁盘容量限制。卸载前请下载历史备份。</p></details>
