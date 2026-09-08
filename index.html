@@ -17,10 +17,10 @@
   </header>
   <main>
     <section class="wrap hero" aria-labelledby="title">
-      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>CHROME 扩展 <span class="version">v0.32.1</span></p>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>CHROME 扩展 <span class="version">v0.32.2</span></p>
       <h1 id="title">只看你关心的<br><span>Fomo 热门币。</span></h1>
       <p class="intro">按市值筛币，优先看新进。<br class="mobile-break">行首直接看榜位升降，也可保留本轮入选币。</p>
-      <div class="actions"><a class="button primary" href="https://github.com/ccxxpa/fomo-trending-filter/releases/download/v0.32.1/fomo-trending-filter-0.32.1.zip">下载插件 <span aria-hidden="true">↓</span></a><a class="button secondary" href="#install">查看安装步骤 <span aria-hidden="true">↗</span></a></div>
+      <div class="actions"><a class="button primary" href="https://github.com/ccxxpa/fomo-trending-filter/releases/download/v0.32.2/fomo-trending-filter-0.32.2.zip">下载插件 <span aria-hidden="true">↓</span></a><a class="button secondary" href="#install">查看安装步骤 <span aria-hidden="true">↗</span></a></div>
       <p class="download-note">电脑 Chrome · ZIP 安装包 · 无需 API Key 或本地服务</p>
     </section>
 
@@ -55,6 +55,7 @@
         <details><summary>装好了，为什么没有面板？</summary><p>确认扩展已启用，且允许访问 Fomo。进入「热门」页并刷新一次。从插件点开的代币详情页不会再显示筛选面板。</p></details>
         <details><summary>「新进」代表刚发行的币吗？</summary><p>不是。「新进」表示本机观察到它进入你选择的榜单范围，不代表发行时间或平台实际上榜时间。</p></details>
         <details><summary>设置和日志收起后，还会继续运行吗？</summary><p>会。点顶部「筛选设置」向上收起、点底部「最近日志」向下收起，两处独立展开并自动记住状态。折叠只改变显示，筛选、声音与日志保存继续运行，轮次和观察起点不变。收起时仍显示条件摘要，全部日志、上榜历史和提醒记录可直接打开；需要修改开关或条件时，再展开设置。</p></details>
+        <details><summary>0.32.2 更新了什么？</summary><p>提醒记录顶部新增“全部／首次上榜／重回”。首次上榜只看本机确认的金色记录；重回只看确认离开整个热榜、重回后命中的提醒。普通首次命中与类型不明的旧记录保留在全部中。同币不同次提醒各自筛选，混合批次保留原批数量。</p><p>这组选择只影响回看，声音、实际记录、主榜与未看规则保持。关闭再打开或从日志返回延续选择，刷新页面后默认全部。标题显示当前批数与全部批数；清空确认会明确包含当前未显示的类型。重新加载扩展并刷新Fomo即可使用，无需清空记录。</p></details>
         <details><summary>0.32.1 更新了什么？</summary><p>0.32.1（2026-09-09）压紧同页提醒和上榜历史。提醒将币名、事件与当时榜位放在同一行，命中和最近市值并排，各自保留完整日期时间，四个操作入口紧接其后。单币批次的时间和数量放到币名右侧，仅省去完全相同的重复时间；多币分组、不同时间、缺值与异常状态继续保留。</p><p>历史将最近在榜和重回次数尽量合为一行，保留可能不完整标记与详情，通用数据来源说明可以展开。主榜计数明确为“当前显示”和“本轮入选”。较窄区域自然换行，沿用原同页切换和上下排列；筛选、轮次、声音、未看、比较依据与存储规则不变。无需清空记录，重新加载扩展并刷新Fomo即可。</p></details>
         <details><summary>0.32.0 更新了什么？</summary><p>0.32.0（2026-09-08）将提醒记录改为同页独立区域，打开后继续看主榜。每条提醒固定保留命中时市值，与当前网页或本机历史的最近可用值比较，显示相对命中的涨跌幅、来源时间，以及超出市值区间、出榜位范围或离榜状态；点「查看历史」按同链完整合约直接定位该币。宽屏可同时查看主榜、提醒与历史，空间不足时切换提醒和历史，窄屏上下排列。</p><p>提醒以这一条记录的命中值为起点；上榜历史继续以首次记录值为起点。旧样本标明「最后观察」或「最近查询」及原时间，缺少依据时明确显示未知。提醒可见时每5秒只读同步本机历史，不新增行情查询；关闭、后台或切到历史后暂停。</p><p>「查看历史」临时按完整合约定位，保留原历史筛选、页码与阅读位置，返回后恢复；定位不自动查询行情。打开日志后提醒继续保留，手动关闭后不会自动重开。无需清空记录，重新加载扩展并刷新Fomo即可。</p></details>
         <details><summary>上榜历史怎样自动同步？</summary><p>上榜历史打开且页面可见时，每5秒同步本机已存记录，更新最近可用市值、最近在榜时间、重回次数和展开详情。已有行保持顺序、阅读位置与操作焦点；新增或排序变化显示「列表有更新，点击查看」，点击后载入新列表，空列表自动显示新记录。关闭历史或切到后台暂停，返回后恢复；看日志时仍打开的历史继续同步。</p><p>自动同步和列表更新提示只读取本机记录，不额外查询行情。离榜币的新行情仍按需查询，原来源时间与失败原因保留，无需清空历史。</p></details>
